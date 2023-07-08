@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gumshaft Coffee</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous"/>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <section class="head">
+        <div class="content flex1">
+            <div class="social_media flex">
+                <span>Ikuti Kami</span>
+                <hr>
+                <a href="https://instagram.com/gumshaftcoffee"><i class="fab fa-facebook-f"></i></a>
+                <i class="fab fa-instagram"></i>
+                <i class="fab fa-twitter"></i>
+                <i class="fab fa-youtube"></i>
+            </div>
+
+            <div class="logo">
+                <img src="image/logo.png" alt="logo">
+            </div>
+
+            <div class="account social_media flex">
+                <i class="fa fa-user"></i>
+                <i class="fas fa-shopping-bag"></i>
+                <i class="fas fa-search"></i>
+
+            </div>
+        </div>
+    </section>    
+
+    <header>
+        <nav>
+            <div class="sidenav" id="mysidenav">
+                <span class="closebtn" onclick="closeNav()">&times;</span>
+                <div class="menu_item">
+                    <a href="#">Beranda</a>
+                    <a href="#">Tentang Kami</a>
+                    <a href="#">Produk</a>
+                    <a href="#">Hubungi Kami</a>
+                </div>
+            </div>
+            <div class="social_media">
+                <i class="fas fa-bars hamburger-icon" onclick="openNav()"></i>
+            </div>
+        </nav>
+    </header>
+
+    <script>
+        function openNav() {
+            document.getElementById("mysidenav").style.width = "250px";
+        }
+
+        function closeNav() {
+            document.getElementById("mysidenav").style.width = "0";
+        }
+    </script>
+
+    <section class="home">
+        <div class="item">
+            <div class="heading">
+                <h1><span>Warkop Terbaik</span><br>Buahbatu</h1>
+                <p>Selamat datang di Gumshaft Coffee, tempat terbaik untuk menikmati secangkir kopi yang otentik dan menggugah selera di Bandung. Kami adalah warung kopi dengan suasana yang hangat dan ramah, yang akan mengajak Anda dalam perjalanan rasa yang tak terlupakan.</p>
+                <button type="button" name="button">Cita Rasa Terbaik</button>
+            </div>
+            <div class="img">
+                <img src="image/home.jpg" alt="tiga-kopi">
+            </div>
+        </div>
+    </section>
+
+
+</body>
+</html>
