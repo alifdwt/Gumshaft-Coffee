@@ -7,72 +7,133 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous"/>
     <link rel="stylesheet" href="css/style.css">
 </head>
-
 <body>
-    <section class="head">
-        <div class="content flex1">
-            <div class="social_media flex">
-                <span>Ikuti Kami</span>
-                <hr>
-                <a href="https://instagram.com/gumshaftcoffee"><i class="fab fa-facebook-f"></i></a>
-                <i class="fab fa-instagram"></i>
-                <i class="fab fa-twitter"></i>
-                <i class="fab fa-youtube"></i>
-            </div>
-
-            <div class="logo">
-                <img src="image/logo.png" alt="logo">
-            </div>
-
-            <div class="account social_media flex">
-                <i class="fa fa-user"></i>
-                <i class="fas fa-shopping-bag"></i>
-                <i class="fas fa-search"></i>
-
-            </div>
+    <header class="navbar-container">
+        <div class="logo">
+            <img src="image/logo.png" alt="Gumshaf Logo">
         </div>
-    </section>    
-
-    <header>
-        <nav>
-            <div class="sidenav" id="mysidenav">
-                <span class="closebtn" onclick="closeNav()">&times;</span>
-                <div class="menu_item">
-                    <a href="#">Beranda</a>
-                    <a href="#">Tentang Kami</a>
-                    <a href="#">Produk</a>
-                    <a href="#">Hubungi Kami</a>
-                </div>
-            </div>
-            <div class="social_media">
-                <i class="fas fa-bars hamburger-icon" onclick="openNav()"></i>
-            </div>
+        <nav class="nav-list">
+            <ul>
+                <li><a href="#beranda">Beranda</a></li>
+                <li><a href="#menu">Menu</a></li>
+                <li><a href="#lokasi">Lokasi</a></li>
+                <li><a href="#hubungikami">Hubungi Kami</a></li>
+            </ul>
         </nav>
     </header>
 
-    <script>
-        function openNav() {
-            document.getElementById("mysidenav").style.width = "250px";
-        }
-
-        function closeNav() {
-            document.getElementById("mysidenav").style.width = "0";
-        }
-    </script>
-
-    <section class="home">
-        <div class="item">
-            <div class="heading">
-                <h1><span>Warkop Terbaik</span><br>Buahbatu</h1>
-                <p>Selamat datang di Gumshaft Coffee, tempat terbaik untuk menikmati secangkir kopi yang otentik dan menggugah selera di Bandung. Kami adalah warung kopi dengan suasana yang hangat dan ramah, yang akan mengajak Anda dalam perjalanan rasa yang tak terlupakan.</p>
+    <main>
+        <article class="content">
+            <div class="hero">
+                <h1 id="beranda"><span>Warkop Terbaik</span> Buahbatu</h1>
+                <p>Selamat datang di <strong>Gumshaft Coffee</strong>, tempat terbaik untuk menikmati secangkir kopi yang otentik dan menggugah selera di Bandung. Kami adalah warung kopi dengan suasana yang hangat dan ramah, yang akan mengajak Anda dalam perjalanan rasa yang tak terlupakan.</p>
                 <button type="button" name="button">Cita Rasa Terbaik</button>
             </div>
             <div class="img">
-                <img src="image/home.jpg" alt="tiga-kopi">
+                <img src="image/home.jpg" alt="Beranda">
+            </div>
+        </article>
+
+        <article class="top-menu">
+            <div class="container">
+                <div class="heading">
+                    <h5 id="menu">Menu Kami</h5>
+                    <h2>Kelezatan Tiada Banding</h2>
+                </div>
+                <div class="lezat">
+                    <div class="item">
+                        <div class="img">
+                            <img src="image/pisang.jpg" alt="pisang">
+                        </div>
+                        <div class="text">
+                            <h3>Pisang Goreng</h3>
+                            <p>Nikmatilah pisang goreng luar biasa</p>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="img">
+                            <img src="image/aren.jpg" alt="Kopi Aren">
+                        </div>
+                        <div class="text">
+                            <h3>Kopi Gula Aren</h3>
+                            <p>Kopi kekinian penghilang rasa kantuk</p>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="img">
+                            <img src="image/susu.jpg" alt="susu">
+                        </div>
+                        <div class="text">
+                            <h3>Susu Sapi</h3>
+                            <p>Susu sapi asli perahan Pangalengan</p>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="img">
+                            <img src="image/cangkir.jpg" alt="kopi">
+                        </div>
+                        <div class="text">
+                            <h3>Kopi Cappucino</h3>
+                            <p>Kapucino tanpa cincau</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </article>
+
+        <article class="teras">
+            <div class="hero">
+                <h1 id="lokasi"><span>Mari Nongkrong</span> Bersama Kawan</h1>
+                <p class="description">Kami adalah warung kopi dengan suasana yang hangat dan ramah, yang akan mengajak Anda dalam perjalanan rasa yang tak terlupakan. Dari biji kopi yang dipanggang dengan hati-hati hingga penyajian yang elegan, kami berkomitmen untuk memberikan pengalaman kopi terbaik bagi setiap tamu kami.</p>
+                <div class="text">
+                    <div class="icon">
+                        <i class="fas fa-map-marker-alt"></i>
+                    </div>
+                    <div class="add">
+                        <h5>Lokasi Kami</h5>
+                        <label>Bandung, Jawa Barat</label>
+                    </div>
+                </div>
+                <h2 id="hubungikami"><span style="color: crimson;">Buka:</span></h2>
+                <p>Senin-Minggu, 10.00-21.00</p>
+                <div class="button">
+                    <button class="teras-btn">Lokasi</button>
+                    <button class="teras-btn">Hubungi Kami </button>
+                </div>
+            </div>
+        </article>
+
+        <aside>
+            <div class="social-media">
+                <ul>
+                    <li><img src="image/logo.png" alt="logo"></li>
+                    <li><a href="https://facebook.com/aputradewantara"><i class="fab fa-facebook-f"></i></a></li>
+                    <li><a href="https://instagram.com/alifdwt"><i class="fab fa-instagram"></i></a></li>
+                    <li><a href="https://twitter.com/alifdwt"><i class="fab fa-twitter"></i></a></li>
+                    <li><a href="https://youtube.com/alifdwt"><i class="fab fa-youtube"></i></a></li>
+                </ul>
+            </div>
+        </aside>
+    </main>
+
+    <footer>
+        <div class="info">
+            <div class="logo">
+                <img src="image/logo.png" alt="logo">
+            </div>
+            <p>Jangan lewatkan kesempatan untuk merasakan keindahan kopi yang autentik, hanya di Gumshaft Coffee. Selamat datang dan nikmati kelezatan kopi kami!</p>
+            <div class="social-media">
+                <ul>
+                    <li><a href="https://facebook.com/aputradewantara"><i class="fab fa-facebook-f"></i></a></li>
+                    <li><a href="https://instagram.com/alifdwt"><i class="fab fa-instagram"></i></a></li>
+                    <li><a href="https://twitter.com/alifdwt"><i class="fab fa-twitter"></i></a></li>
+                    <li><a href="https://youtube.com/alifdwt"><i class="fab fa-youtube"></i></a></li>
+                </ul>
             </div>
         </div>
-    </section>
-
-
+        <div class="copyright">
+            <p>Hak Cipta: <a href="mailto:aputradewantara@gmail.com">Alif Dewantara</a> 2023</p>
+        </div>
+    </footer>
 </body>
 </html>
