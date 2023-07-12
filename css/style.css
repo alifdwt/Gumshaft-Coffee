@@ -169,7 +169,7 @@ main .top-menu .item .img img:hover {
 
 /* TERAS */
 main .teras {
-    background-image: url("/image/teras.jpg");
+    background-image: url("../image/teras.jpg");
     height: 100vh;
     background-attachment: fixed;
     background-repeat: no-repeat;
@@ -310,7 +310,7 @@ footer .copyright a {
 }
 
 /* RESPONSIVE */
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 900px) {
     main .content .hero h1 {
         font-size: 80px;
         line-height: 80px;
